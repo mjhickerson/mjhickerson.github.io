@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page moved</title>
+<meta name="robots" content="noindex">
+<script>
+(function () {
+  var p = location.pathname;
+  // The lab site and phylodiet have their own pages. Never forward those, so this can't loop.
+  if (p.indexOf('/hickerlab') === 0 || p.indexOf('/phylodiet') === 0) return;
+  // Anything else is an old hickerlab.wordpress.com address: hand it to the lab site with the same path.
+  location.replace('/hickerlab' + p + location.search + location.hash);
+})();
+</script>
+<noscript><meta http-equiv="refresh" content="0; url=/hickerlab/"></noscript>
+<style>
+body { margin: 0; background: #fbfcf9; color: #1d2422; font-family: Georgia, serif; font-size: 1.125rem; line-height: 1.6; }
+main { max-width: 43rem; margin: 0 auto; padding: 3rem 1.25rem; }
+a { color: #0d6b5f; }
+</style>
+</head>
+<body>
+<main>
+<p>That page isn't here.</p>
+<p>Try the <a href="/hickerlab/">hickerlab home page</a> or <a href="/phylodiet/">Phylodiet</a>.</p>
+</main>
+</body>
+</html>
